@@ -1,0 +1,160 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  font-family: "Karla", sans-serif;
+  background-image: url(../Images/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  background-color: rgb(255, 255, 255, 0.2);
+  box-shadow: 0 15px 25px rgb(0, 0, 0, 0.5);
+  border: 1px solid rgb(255, 255, 255, 0.5);
+  backdrop-filter: blur(4px);
+  border-radius: 20px;
+  display: flex;
+  position: relative;
+}
+
+.aside {
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  right: 350px;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.aside li {
+  width: 100px;
+  height: 100px;
+  z-index: 20;
+  background-image: url(../Images/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 15px 25px rgb(0, 0, 0, 0.5);
+  border: 1px solid rgb(255, 255, 255, 0.5);
+  backdrop-filter: blur(4px);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 15px 0px;
+  padding: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+.aside img {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.aside li:hover img {
+  transform: rotate(-35deg);
+}
+
+.imgbox {
+  width: 95%;
+  height: 100%;
+  color: white;
+  position: absolute;
+  left: 5%;
+}
+
+.imgbox h1 {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.trainers-img{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.imgbox img {
+  width: 250px;
+  transition: 0.5s;
+}
+
+.imgbox img:hover {
+  transform: scale(1.55) rotate(-15deg) translateX(20px);
+}
+
+.imgbox ul {
+  width: 100%;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgbox span {
+  margin-right: 15px;
+}
+
+.imgbox ul li {
+  text-align: center;
+  border-radius: 5px;
+  list-style: none;
+  margin: 5px;
+  padding: 7px 10px;
+  color: black;
+  background-color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.imgbox ul li:hover {
+  transform: translateY(-7px);
+}
+
+.size.active {
+  background-image: url(../Images/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 15px 25px rgb(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+}
+
+button {
+  padding: 15px;
+  border-radius: 20px;
+  font-weight: 700;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+
+}
+
+button:hover {
+  letter-spacing: 3px;
+}

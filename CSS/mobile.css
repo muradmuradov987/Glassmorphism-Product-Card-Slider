@@ -1,0 +1,38 @@
+    .container {
+        width: 300px;
+        height: 350px;
+    }
+    
+    .aside {
+        width: 300px;
+        top: 0px;
+        right: 0px;
+    }
+    
+    .shoe-photos {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .aside li {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .imgbox {
+        width: 300px;
+        left: 0px;
+    }
+    
+    .imgbox h1 {
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+    .trainers-img{
+        margin-bottom: 20px;
+    }
+    
+    .imgbox img:hover {
+        transform: scale(1.15) rotate(-15deg) translateX(15px);
+    }
+   
